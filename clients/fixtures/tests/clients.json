@@ -1,0 +1,26 @@
+[
+{
+  "model": "clients.client",
+  "pk": 1,
+  "fields": {
+    "uuid": "68b72d12-f23d-4a70-ac9a-140d3716803a",
+    "company": 1,
+    "name": "C1Client",
+    "created_by": 2,
+    "created_at": "2022-09-07T14:20:20.027Z",
+    "updated_at": "2022-09-07T14:20:20.027Z"
+  }
+},
+{
+  "model": "clients.client",
+  "pk": 2,
+  "fields": {
+    "uuid": "ed8058b5-32cf-4875-ab50-e179708cbf26",
+    "company": 2,
+    "name": "C2Client",
+    "created_by": 3,
+    "created_at": "2022-09-07T14:20:28.055Z",
+    "updated_at": "2022-09-07T14:20:28.055Z"
+  }
+}
+]

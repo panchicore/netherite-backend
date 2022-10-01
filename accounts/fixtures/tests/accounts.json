@@ -1,0 +1,47 @@
+[
+{
+  "model": "accounts.account",
+  "pk": 1,
+  "fields": {
+    "uuid": "6e506783-c71a-4f58-8b70-30c00e045d73",
+    "company": 1,
+    "user": 2
+  }
+},
+{
+  "model": "accounts.account",
+  "pk": 2,
+  "fields": {
+    "uuid": "30bcf8a8-34e4-4614-87db-3b3241b401ce",
+    "company": 2,
+    "user": 3
+  }
+},
+{
+  "model": "accounts.account",
+  "pk": 3,
+  "fields": {
+    "uuid": "efab8574-5084-49dc-be93-e7d5c47f779f",
+    "company": 1,
+    "user": 4
+  }
+},
+{
+  "model": "accounts.account",
+  "pk": 4,
+  "fields": {
+    "uuid": "15d97d29-df65-49c4-baed-897aa0c50210",
+    "company": 2,
+    "user": 5
+  }
+},
+{
+  "model": "accounts.account",
+  "pk": 5,
+  "fields": {
+    "uuid": "d925090c-6ec9-4ea4-8e5a-11db3fc113d4",
+    "company": 1,
+    "user": 6
+  }
+}
+]

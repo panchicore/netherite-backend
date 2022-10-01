@@ -1,0 +1,18 @@
+[
+{
+  "model": "accounts.company",
+  "pk": 1,
+  "fields": {
+    "uuid": "f5bace42-b89f-4353-9dea-548b23e070bf",
+    "name": "C1 Logistics"
+  }
+},
+{
+  "model": "accounts.company",
+  "pk": 2,
+  "fields": {
+    "uuid": "3d2d4a1c-6d68-44cc-89c0-896764ff80a6",
+    "name": "C2 Logistics"
+  }
+}
+]
