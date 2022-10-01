@@ -10,5 +10,3 @@ class AccountsConfig(AppConfig):
         from django.contrib.auth.models import User
         registry.register(User)
         registry.register(self.get_model('Company'))
-
-

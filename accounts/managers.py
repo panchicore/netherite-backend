@@ -1,7 +1,4 @@
 from django.db import models
-from rest_framework.exceptions import APIException
-
-from accounts.exceptions import AccountMissingException
 
 
 class AccountManager(models.Manager):

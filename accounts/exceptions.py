@@ -18,6 +18,3 @@ class CompanyMissingException(APIException):
     status_code = 400
     default_detail = 'Request must send the company on the payload.'
     default_code = 'company_missing'
-
-
-

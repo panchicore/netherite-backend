@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from django.test import TestCase
 
-from accounts.models import Company, Account
+from accounts.models import Company
 
 
 class SimpleTest(TestCase):
@@ -69,6 +69,3 @@ class SimpleTest(TestCase):
         # avoid duplication of clients
         response = self.client.post('/api/1/clients/', data=data, **self.get_account_header())
         self.assertEqual(response.status_code, 400)
-
-
-

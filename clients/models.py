@@ -2,8 +2,6 @@ import uuid as uuid
 
 from django.conf import settings
 from django.db import models
-from django.db.models import UniqueConstraint
-from django.db.models.functions import Lower
 
 from accounts.models import Company
 

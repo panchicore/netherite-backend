@@ -1,5 +1,4 @@
 from rest_framework import permissions
-from rest_framework.exceptions import APIException
 
 from accounts.exceptions import AccountNotAssociatedException, CompanyMissingException, AccountMissingException
 from accounts.models import Account
@@ -36,5 +35,3 @@ class AccountsPermission(permissions.BasePermission):
 
     def has_object_permission(self, request, view, obj):
         return super().has_object_permission(request, view, obj)
-
-

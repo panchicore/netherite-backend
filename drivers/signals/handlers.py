@@ -1,6 +1,6 @@
+from actstream import action
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
-from actstream import action
 
 from accounts.models import Account
 from drivers.models import Driver

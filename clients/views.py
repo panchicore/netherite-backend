@@ -18,6 +18,7 @@ class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
     permission_classes = [IsAuthenticated, DjangoModelPermissions]
+
     # view model permissions hack https://stackoverflow.com/a/46585240/155293
 
     def get_queryset(self):

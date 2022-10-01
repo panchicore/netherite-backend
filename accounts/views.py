@@ -1,9 +1,7 @@
-from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 
 from accounts.models import Company, Account
-from accounts.permissions import AccountsPermission
 from accounts.serializers import CompanySerializer, UserSerializer, AccountSerializer
 
 
@@ -31,8 +29,3 @@ class AccountViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return super().get_queryset().filter(user=self.request.user)
-
-
-
-
-

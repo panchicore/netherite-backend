@@ -1,5 +1,3 @@
-from django.contrib.auth.models import Group
-
 from accounts.exceptions import AccountMissingException
 from accounts.models import Account
 

@@ -27,5 +27,3 @@ class ClientSerializer(serializers.ModelSerializer):
         if not Account.objects.is_associated(user, company):
             raise serializers.ValidationError('Company not part of user accounts')
         return company
-
-
