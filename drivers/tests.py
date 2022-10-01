@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 
 from accounts.models import Company
-from drivers.models import Driver, DriverDocument
+from drivers.models import Driver
 
 
 class SimpleTest(TestCase):
@@ -403,5 +403,3 @@ class SimpleTest(TestCase):
         response = self.client.get('/api/1/drivers/?search=444', **self.get_account_header())
         self.assertEqual(response.status_code, 200)
         self.assertEqual(len(response.json()), 1)
-
-
