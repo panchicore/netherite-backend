@@ -389,3 +389,10 @@ class SimpleTest(TestCase):
                                       data=data, **self.get_account_header(),
                                       content_type="application/json")
         self.assertEqual(response.status_code, 404)
+
+    def test_driver_can_filter_by_identification_type(self):
+        user = User.objects.get(username="c1logistics")
+        self.client.force_login(user)
+        response = self.client.get('/api/1/drivers/?identification_type=national-id', **self.get_account_header())
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(len(response.json()), 2)
