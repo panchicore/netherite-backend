@@ -396,3 +396,12 @@ class SimpleTest(TestCase):
         response = self.client.get('/api/1/drivers/?identification_type=national-id', **self.get_account_header())
         self.assertEqual(response.status_code, 200)
         self.assertEqual(len(response.json()), 2)
+
+    def test_driver_can_search_by_identification_type(self):
+        user = User.objects.get(username="c1logistics")
+        self.client.force_login(user)
+        response = self.client.get('/api/1/drivers/?search=444', **self.get_account_header())
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(len(response.json()), 1)
+
+
