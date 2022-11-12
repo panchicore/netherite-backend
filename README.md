@@ -4,12 +4,13 @@
 
 For models you have to take care about:
 
+- Admin
 - Serializers, Views and Filters
 - Permissions
 - Validations
 - Signals
 - Register activity feed
-- Admin
+- Tests
 
 ### User
 
@@ -30,6 +31,10 @@ Definition: Companies are the core users, they run business processes (logistic 
 
 As superuser I can create companies so they can sign-up to the platform.
 
+##### TODO
+
+- names must be unique
+
 ### Account
 
 Definition: Association of users vs companies are made through this model.
@@ -40,11 +45,19 @@ Definition: Clients are "Company"s customers.
 
 As coordinator I can CRUD clients.
 
+##### TODO
+
+- names must be unique by company
+
 ### Driver
 
 Definition: Drives a vehicle. Drivers should be associated to a user in order to manage their functions in the platform.
 
 As Coordinator I can CRUD drivers. (T)
+
+##### TODO
+
+- drivers identification must be unique by company
 
 #### Asosicate user with driver:
 
@@ -68,6 +81,22 @@ Definition: Drivers has documents.
 - As Driver I can update or delete own documents. (T)
 - As Coordinator I can upload company's drivers documents. (T)
 - As Coordinator I can CRUD any of company's drivers documents. (T)
+
+### Vehicle
+
+Definition: A vehicle is a company resource owned by a provider.
+
+- As Coordinator I can CRUD vehicles.
+
+##### TODO
+
+- plates must be unique by client
+
+### Vehicle Documents
+
+Definition: A vehicle has documents
+
+- As Driver associated with this vehicle I can upload documents.
 
 ## python dependences
 
