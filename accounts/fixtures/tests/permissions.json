@@ -574,5 +574,113 @@
     "content_type": 16,
     "codename": "view_driverdocument"
   }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add vehicle",
+    "content_type": 17,
+    "codename": "add_vehicle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change vehicle",
+    "content_type": 17,
+    "codename": "change_vehicle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete vehicle",
+    "content_type": 17,
+    "codename": "delete_vehicle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view vehicle",
+    "content_type": 17,
+    "codename": "view_vehicle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add vehicle document",
+    "content_type": 18,
+    "codename": "add_vehicledocument"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change vehicle document",
+    "content_type": 18,
+    "codename": "change_vehicledocument"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete vehicle document",
+    "content_type": 18,
+    "codename": "delete_vehicledocument"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view vehicle document",
+    "content_type": 18,
+    "codename": "view_vehicledocument"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add vehicle type",
+    "content_type": 19,
+    "codename": "add_vehicletype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change vehicle type",
+    "content_type": 19,
+    "codename": "change_vehicletype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete vehicle type",
+    "content_type": 19,
+    "codename": "delete_vehicletype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view vehicle type",
+    "content_type": 19,
+    "codename": "view_vehicletype"
+  }
 }
 ]
