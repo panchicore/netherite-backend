@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.permissions import IsAuthenticated
 
 from accounts.models import Company, Account
 from accounts.serializers import CompanySerializer, UserSerializer, AccountSerializer
@@ -11,12 +11,17 @@ class UserViewSet(viewsets.ModelViewSet):
 
 
 class CompanyViewSet(viewsets.ModelViewSet):
-    """
-    Companies are better created on the admin site.
-    """
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        if self.request.user.is_superuser:
+            return self.queryset
+
+        # list only companies associated to the user
+        companies = Account.objects.filter(user=self.request.user).values_list("company_id", flat=True)
+        return self.queryset.filter(id__in=companies)
 
 
 class AccountViewSet(viewsets.ModelViewSet):
