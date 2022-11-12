@@ -7,6 +7,9 @@ test-fixtures:
 	python manage.py dumpdata clients.Client 			--indent 2 --pk 1,2 > clients/fixtures/tests/clients.json
 	python manage.py dumpdata drivers.Driver 			--indent 2 --pk 1,2,3 > drivers/fixtures/tests/drivers.json
 	python manage.py dumpdata drivers.DriverDocument 	--indent 2 --pk 1,2,3 > drivers/fixtures/tests/drivers_docs.json
+	python manage.py dumpdata vehicles.VehicleType		--indent 2 --pk 1,2,3 > vehicles/fixtures/tests/vehicle_types.json
+	python manage.py dumpdata vehicles.Vehicle		 	--indent 2 --pk 1,2,3 > vehicles/fixtures/tests/vehicles.json
+	python manage.py dumpdata vehicles.VehicleDocument	--indent 2 --pk 1 > vehicles/fixtures/tests/vehicles_docs.json
 
 
 load-initial-data:
@@ -17,6 +20,9 @@ load-initial-data:
 	python manage.py loaddata clients/fixtures/tests/clients.json
 	python manage.py loaddata drivers/fixtures/tests/drivers.json
 	python manage.py loaddata drivers/fixtures/tests/drivers_docs.json
+	python manage.py loaddata vehicles/fixtures/tests/vehicle_types.json
+	python manage.py loaddata vehicles/fixtures/tests/vehicles.json
+	python manage.py loaddata vehicles/fixtures/tests/vehicles_docs.json
 
 test:
 	python manage.py test
