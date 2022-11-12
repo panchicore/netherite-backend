@@ -17,6 +17,7 @@ router.register(r'vehicles', VehicleViewSet)
 
 urlpatterns = [
     path('api/1/', include(router.urls)),
+    path('api/1/auth/', include('dj_rest_auth.urls')),
     path('nimda/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('activity/', include('actstream.urls'))
