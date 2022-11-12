@@ -1,0 +1,16 @@
+[
+{
+  "model": "vehicles.vehicledocument",
+  "pk": 1,
+  "fields": {
+    "company": 1,
+    "vehicle": 1,
+    "type": "other",
+    "file": "vehicle/1/docs/INV-000003.pdf",
+    "expiration_date": "2024-04-19",
+    "created_by": 2,
+    "created_at": "2022-10-08T15:07:04.009Z",
+    "updated_at": "2022-10-08T15:08:11.798Z"
+  }
+}
+]

@@ -1,0 +1,44 @@
+[
+{
+  "model": "vehicles.vehicle",
+  "pk": 1,
+  "fields": {
+    "company": 1,
+    "uuid": "f55ae974-3488-4ad6-829b-af6e7bcd5d9b",
+    "owner": 7,
+    "type": 1,
+    "plate": "AAA111",
+    "created_by": 2,
+    "created_at": "2022-10-08T14:55:33.554Z",
+    "updated_at": "2022-10-08T15:08:11.796Z"
+  }
+},
+{
+  "model": "vehicles.vehicle",
+  "pk": 2,
+  "fields": {
+    "company": 1,
+    "uuid": "f99c95c4-eb09-4b5e-a4f5-7ccb60bf47fc",
+    "owner": 7,
+    "type": 2,
+    "plate": "AAA112",
+    "created_by": 2,
+    "created_at": "2022-10-08T14:56:17.972Z",
+    "updated_at": "2022-10-08T14:56:17.972Z"
+  }
+},
+{
+  "model": "vehicles.vehicle",
+  "pk": 3,
+  "fields": {
+    "company": 2,
+    "uuid": "9dc245cd-aa05-4d93-9538-4f8ad5af9529",
+    "owner": 8,
+    "type": 3,
+    "plate": "BBB111",
+    "created_by": 3,
+    "created_at": "2022-10-08T14:57:04.089Z",
+    "updated_at": "2022-10-08T14:57:04.089Z"
+  }
+}
+]
