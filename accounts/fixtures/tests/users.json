@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$390000$ReqDGCuiib184Rv1KFBs98$LEDNSB297qzto2KvldwGEVxXNl8ZNXikUkl8tmHB08I=",
-    "last_login": "2022-09-15T15:44:20.575Z",
+    "last_login": "2022-10-08T14:47:51.929Z",
     "is_superuser": true,
     "username": "panchicore",
     "first_name": "Luis",
